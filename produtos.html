@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PutaMerda</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <title>produtost</title>
 </head>
 <body>
     <header>
@@ -28,15 +28,44 @@
     </header>
 
 
-
-    <section class="hero_img">
-        <img src="./img/PutaMerda_personagem.png" alt="Personagem puta merda em pé">
-        <img src="./img/neon.png" alt="escrita Puta merda em neon">
-    </section>
-
-
-
     <main>
+        <div>
+            <img src="./img/Icon Button_like.png" alt="">
+            <img src="./img/Image1_G.png" alt="produto em destaque">
+        </div>
+        <div>
+            <h3>Text Heading</h3>
+            <p class="tag">título da tag</p>
+            <h2 class="price">R$ 50</h2>
+
+            <div>
+                <div>
+                    <label for="camisetas">Escolha uma camiseta:</label>
+                    <select id="camisetas" name="camisetas">
+                        <option value="preta">Preta</option>
+                        <option value="branca">Branca</option>
+                        <option value="cinza">Cinza</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="tamanhos"> Escolha o tamanho</label>
+                    <select id="tamanhos" name="tamanhos">
+                        <option value="pequena">Pequeno</option>
+                        <option value="media">Médio</option>
+                        <option value="grande">Grande</option>
+                    </select>
+                </div>
+
+                <button>comprar</button>
+            </div>
+
+            <p class="description">Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
+        </div>
+    </main>
+
+
+    <section>
         <h2>Título da sessão</h2>
         <div class="featured_products">
             <div class="arrow_next">
@@ -61,41 +90,7 @@
                 <p>Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story. </p>
             </article>
         </div>
-    </main>
-
-
-
-    <div class="banner">
-        <div class="banner_left">
-            <h4>pense muito bem antes de comprar essa,</h4>
-            <img src="./img/putaMerda.png" alt="escrita puta merda">
-            <button onclick="window.location.href='./faq.html'">FAQ</button>
-
-        </div>
-        <div class="banner_right">
-            <img src="./img/PutaMerda_personagemDeitada.png" alt="Personagem puta merda deitada">
-        </div>
-    </div>
-
-
-
-    <section>
-        <div class="gallery">
-            <div class="gallery_left">
-                <h3>Título</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit consectetur, id odio vel non facilis qui optio earum cum illo, minima mollitia ipsa? Eaque nihil minus laborum voluptates alias aspernatur sequi voluptatem, doloremque accusamus, est dolores possimus dignissimos exercitationem fugit deserunt non tempora maxime quos? Cum sed et dolorum vero.</p>
-            </div>
-            <div class="gallery_right">
-                <img src="./img/Image_blank.png" alt="">
-                <img src="./img/Image_blank.png" alt="">
-                <img src="./img/Image_blank.png" alt="">
-                <img src="./img/Image_blank.png" alt="">
-                <img src="./img/Image_blank.png" alt="">
-                <img src="./img/Image_blank.png" alt="">
-            </div>
-        </div>
     </section>
-
 
 
 
@@ -106,6 +101,6 @@
         <div class="menu"></div>
         <div class="social_media"></div>
     </footer>
-
+    
 </body>
 </html>
