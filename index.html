@@ -3,109 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PutaMerda</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    
+    <title>home:: PutaMerda</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="./index.html"><img src="./img/PMBrand.svg" alt="logotipo puta merda"></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">menu01</a></li>
-                <li><a href="#">menu02</a></li>
-                <li><a href="#">menu03</a></li>
-                <li><a href="#">menu04</a></li>
+    <header class="header grid">
+        <img class="header__logo" src="./img/PMBrand.svg" alt="" srcset="">
+        <nav class="">
+            <ul class="header__menu">
+                <li class="header__menuItem"><a class="header__menuLink">item 1</a></li>
+                <li class="header__menuItem"><a class="header__menuLink">item 2</a></li>
+                <li class="header__menuItem"><a class="header__menuLink">item 3</a></li>
+                <li class="header__menuItem"><a class="header__menuLink">item 4</a></li>
             </ul>
+
         </nav>
-        <div class="cta">
-            <button>calltoaction</button>
-        </div>
+        <button class="header__menuButton">menu</button>
     </header>
 
 
-
-    <section class="hero_img">
-        <img src="./img/PutaMerda_personagem.png" alt="Personagem puta merda em pé">
-        <img src="./img/neon.png" alt="escrita Puta merda em neon">
+    <section class="banner">
+        <div class="banner__esquerda">
+            <img src="./img/PutaMerda_personagem.png" alt="personagem_PutaMerda" srcset="">
+        </div>
+        <div class="banner__direita">
+            <img src="./img/neon.png" alt="escrita_PutaMerda" srcset="">
+            <img class="banner__direitaMoney" src="./img/money.png" alt="ilustraçao_dinheiro" srcset="">
+        </div>
     </section>
 
 
 
-    <main>
-        <h2>Título da sessão</h2>
-        <div class="featured_products">
-            <div class="arrow_next">
-                <img src="./img/arrow_next.svg" alt="">
-            </div>
+    <main >
+        <h2>produtos</h2>
+
+        <div class="products__featured grid">
             <div class="arrow_previous">
                 <img src="./img/arrow_previous.svg" alt="">
             </div>
-            <article class="card">
-                <a href="./produtos.html"><img src="./img/Image1.png" alt="kit de 3 camisetas da Puta Merda"></a>
-                <h3>kit Puta Merda</h3>
-                <p>Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story. </p>
-            </article>
-            <article class="card">
-                <a href="#"><img src="./img/Image2.png" alt="camiseta amarela da Puta Merda"></a>
-                <h3>Camiseta amarela</h3>
-                <p>Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story. </p>
-            </article>
-            <article class="card">
-                <a href="#"><img src="./img/Image3.png" alt="Blusa moletom canguru preta da Puta Merda"></a>
-                <h3>Blusa moletom preto</h3>
-                <p>Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story. </p>
-            </article>
+    
+    
+            <div class="products grid">
+    
+                <article class="products__card">
+                    <a  class="card__link"href="./produtos.html"><img class="card__img"src="./img/Image1.png" alt="kit de 3 camisetas da Puta Merda"></a>
+                    <h3 class="card__title" >kit Puta Merda</h3>
+                    <p class="card__text" >Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story. </p>
+                </article>
+                <article class="products__card">
+                    <a  class="card__link"href="./produtos.html"><img class="card__img"src="./img/Image2.png" alt="kit de 3 camisetas da Puta Merda"></a>
+                    <h3 class="card__title" >kit Puta Merda</h3>
+                    <p class="card__text" >Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story. </p>
+                </article>
+                <article class="products__card">
+                    <a  class="card__link"href="./produtos.html"><img class="card__img"src="./img/Image3.png" alt="kit de 3 camisetas da Puta Merda"></a>
+                    <h3 class="card__title" >kit Puta Merda</h3>
+                    <p class="card__text" >Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story. </p>
+                </article>
+    
+            </div>
+    
+            <div class="arrow_next">
+                <img src="./img/arrow_next.svg" alt="">
+            </div>
+    
         </div>
+
     </main>
 
 
 
-    <div class="banner">
-        <div class="banner_left">
+    <section class="banner_FAQ">
+        <div class="banner_FAQleft">
             <h4>pense muito bem antes de comprar essa,</h4>
             <img src="./img/putaMerda.png" alt="escrita puta merda">
             <button onclick="window.location.href='./faq.html'">FAQ</button>
-
         </div>
-        <div class="banner_right">
+        <div class="banner_FAQright">
             <img src="./img/PutaMerda_personagemDeitada.png" alt="Personagem puta merda deitada">
-        </div>
-    </div>
-
-
-
-    <section>
-        <div class="gallery">
-            <div class="gallery_left">
-                <h3>Título</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit consectetur, id odio vel non facilis qui optio earum cum illo, minima mollitia ipsa? Eaque nihil minus laborum voluptates alias aspernatur sequi voluptatem, doloremque accusamus, est dolores possimus dignissimos exercitationem fugit deserunt non tempora maxime quos? Cum sed et dolorum vero.</p>
-            </div>
-            <div class="gallery_right">
-                <img src="./img/Image_blank.png" alt="">
-                <img src="./img/Image_blank.png" alt="">
-                <img src="./img/Image_blank.png" alt="">
-                <img src="./img/Image_blank.png" alt="">
-                <img src="./img/Image_blank.png" alt="">
-                <img src="./img/Image_blank.png" alt="">
-            </div>
         </div>
     </section>
 
-
-
-
-    <footer>
-        <div class="logo_footer">
-            <img src="./img/PMBrand_2.png" alt="">
-        </div>
-        <div class="menu"></div>
-        <div class="social_media"></div>
-    </footer>
-
+    
 </body>
 </html>
