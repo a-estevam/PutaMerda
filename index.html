@@ -1,121 +1,174 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
     <title>home:: PutaMerda</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header grid">
-        <a href="./index.html"><img class="header__logo" src="./img/PMBrand.svg" alt="" srcset=""></a>
-        <nav class="">
-            <ul class="header__menu">
-                <li class="header__menuItem"><a class="header__menuLink">item 1</a></li>
-                <li class="header__menuItem"><a class="header__menuLink">item 2</a></li>
-                <li class="header__menuItem"><a class="header__menuLink">item 3</a></li>
-                <li class="header__menuItem"><a class="header__menuLink">item 4</a></li>
-            </ul>
-
-        </nav>
-        <button class="header__menuButton">menu</button>
+      <a href="./index.html"
+        ><img class="header__logo" src="./img/PMBrand.svg" alt="" srcset=""
+      /></a>
+      <nav class="">
+        <ul class="header__menu">
+          <li class="header__menuItem">
+            <a class="header__menuLink" href="#">home</a>
+          </li>
+          <li class="header__menuItem">
+            <a class="header__menuLink" href="#produto">produtos</a>
+          </li>
+          <li class="header__menuItem">
+            <a class="header__menuLink" href="#galeria">galeria</a>
+          </li>
+          <li class="header__menuItem">
+            <a class="header__menuLink" href="#">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="header__menuButton"
+        onclick="window.location.href='./faq.html'"
+      >
+        login
+      </button>
     </header>
 
-
     <section class="banner">
-        <div class="banner__esquerda">
-            <img src="./img/PutaMerda_personagem.png" alt="personagem_PutaMerda" srcset="">
-        </div>
-        <div class="banner__direita">
-            <img src="./img/neon.png" alt="escrita_PutaMerda" srcset="">
-            <img class="banner__direitaMoney" src="./img/money.png" alt="ilustraçao_dinheiro" srcset="">
-        </div>
+      <div class="banner__esquerda">
+        <img
+          src="./img/PutaMerda_personagem.png"
+          alt="personagem_PutaMerda"
+          srcset=""
+        />
+      </div>
+      <div class="banner__direita">
+        <img src="./img/neon.png" alt="escrita_PutaMerda" srcset="" />
+        <img
+          class="banner__direitaMoney"
+          src="./img/money.png"
+          alt="ilustraçao_dinheiro"
+          srcset=""
+        />
+      </div>
     </section>
 
+    <main id="produto">
+      <h2>produtos</h2>
 
-
-    <main >
-        <h2>produtos</h2>
-
-        <div class="products__featured grid">
-            <div class="arrow_previous">
-                <img src="./img/arrow_previous.svg" alt="">
-            </div>
-    
-    
-            <div class="products grid">
-    
-                <article class="products__card">
-                    <a  class="card__link"href="./produtos.html"><img class="card__img"src="./img/Image1.png" alt="kit de 3 camisetas da Puta Merda"></a>
-                    <h3 class="card__title" >kit Puta Merda</h3>
-                    <p class="card__text" >Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story. </p>
-                </article>
-                <article class="products__card">
-                    <a  class="card__link"href="./produtos.html"><img class="card__img"src="./img/Image2.png" alt="kit de 3 camisetas da Puta Merda"></a>
-                    <h3 class="card__title" >kit Puta Merda</h3>
-                    <p class="card__text" >Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story. </p>
-                </article>
-                <article class="products__card">
-                    <a  class="card__link"href="./produtos.html"><img class="card__img"src="./img/Image3.png" alt="kit de 3 camisetas da Puta Merda"></a>
-                    <h3 class="card__title" >kit Puta Merda</h3>
-                    <p class="card__text" >Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story. </p>
-                </article>
-    
-            </div>
-    
-            <div class="arrow_next">
-                <img src="./img/arrow_next.svg" alt="">
-            </div>
-    
+      <div class="products__featured grid">
+        <div class="arrow_previous">
+          <img src="./img/arrow_previous.svg" alt="" />
         </div>
 
+        <div class="products grid" >
+          <article class="products__card">
+            <a class="card__link" href="./produtos.html"
+              ><img
+                class="card__img"
+                src="./img/Image1.png"
+                alt="kit de 3 camisetas da Puta Merda"
+            /></a>
+            <h3 class="card__title">kit Puta Merda</h3>
+            <p class="card__text">
+              Body text for whatever you'd like to say. Add main takeaway
+              points, quotes, anecdotes, or even a very very short story.
+            </p>
+          </article>
+          <article class="products__card">
+            <a class="card__link" href="./produtos.html"
+              ><img
+                class="card__img"
+                src="./img/Image2.png"
+                alt="kit de 3 camisetas da Puta Merda"
+            /></a>
+            <h3 class="card__title">kit Puta Merda</h3>
+            <p class="card__text">
+              Body text for whatever you'd like to say. Add main takeaway
+              points, quotes, anecdotes, or even a very very short story.
+            </p>
+          </article>
+          <article class="products__card">
+            <a class="card__link" href="./produtos.html"
+              ><img
+                class="card__img"
+                src="./img/Image3.png"
+                alt="kit de 3 camisetas da Puta Merda"
+            /></a>
+            <h3 class="card__title">kit Puta Merda</h3>
+            <p class="card__text">
+              Body text for whatever you'd like to say. Add main takeaway
+              points, quotes, anecdotes, or even a very very short story.
+            </p>
+          </article>
+        </div>
+
+        <div class="arrow_next">
+          <img src="./img/arrow_next.svg" alt="" />
+        </div>
+      </div>
     </main>
 
-
-
     <section class="banner_FAQ">
-        <div class="banner_FAQleft">
-            <h4>pense muito bem antes de comprar essa,</h4>
-            <img src="./img/putaMerda.png" alt="escrita puta merda">
-            <button onclick="window.location.href='./faq.html'">FAQ</button>
-        </div>
-        <div class="banner_FAQright">
-            <img src="./img/PutaMerda_personagemDeitada.png" alt="Personagem puta merda deitada">
-        </div>
+      <div class="banner_FAQleft">
+        <h4>pense muito bem antes de comprar essa,</h4>
+        <img src="./img/putaMerda.png" alt="escrita puta merda" />
+        <button onclick="window.location.href='./faq.html'">FAQ</button>
+      </div>
+      <div class="banner_FAQright">
+        <img
+          src="./img/PutaMerda_personagemDeitada.png"
+          alt="Personagem puta merda deitada"
+        />
+      </div>
     </section>
 
-    <section>
-        <div class="gallery">
-            <div class="gallery_left">
-                <h3>Título</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit consectetur, id odio vel non facilis qui optio earum cum illo, minima mollitia ipsa? Eaque nihil minus laborum voluptates alias aspernatur sequi voluptatem, doloremque accusamus, est dolores possimus dignissimos exercitationem fugit deserunt non tempora maxime quos? Cum sed et dolorum vero.</p>
-            </div>
-            <div class="gallery_right">
-                <img src="./img/Image_blank.png" alt="">
-                <img src="./img/Image_blank.png" alt="">
-                <img src="./img/Image_blank.png" alt="">
-                <img src="./img/Image_blank.png" alt="">
-                <img src="./img/Image_blank.png" alt="">
-                <img src="./img/Image_blank.png" alt="">
-            </div>
+    <section class="grid" id="galeria">
+      <div class="gallery">
+        <div class="gallery_left">
+          <h2>Título</h2>
+          <p>
+            imply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the
+            1500s, when an unknown printer took a galley of type and scrambled
+            it to make a type specimen book. It has survived not only five
+            centuries, but also the leap into electronic typesetting, remaining
+            essentially unchanged. It was popularised in the 1960s with the
+            release of Letraset sheets containing Lorem Ipsum passages, and more
+            recently with desktop publishing software like Aldus PageMaker
+            including versions of Lorem Ipsum.
+          </p>
         </div>
+        <div class="gallery_right">
+          <img src="./img/Image_blank.png" alt="" />
+          <img src="./img/Image_blank.png" alt="" />
+          <img src="./img/Image_blank.png" alt="" />
+          <img src="./img/Image_blank.png" alt="" />
+          <img src="./img/Image_blank.png" alt="" />
+          <img src="./img/Image_blank.png" alt="" />
+        </div>
+      </div>
     </section>
-
-
-
 
     <footer>
+      <div class="footer grid">
         <div class="logo_footer">
-            <img src="./img/PMBrand_2.png" alt="">
+          <a href="./index.html"><img src="./img/PMBrand_2.png" alt="" /></a>
         </div>
         <div class="menu"></div>
-        <div class="social_media"></div>
+        <div class="social_media">
+          <h3>@putamerdastore</h3>
+          <img src="./img/face_icon.png" alt="" srcset="" />
+          <img src="./img/inst_icon.png" alt="" srcset="" />
+        </div>
+      </div>
     </footer>
-
-
-    
-</body>
+  </body>
 </html>

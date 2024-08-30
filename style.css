@@ -1,20 +1,386 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-black: #1d1d1b;
+  --color-white: #ffffff;
+  --color-primary1: #662483;
+  --color-primary2: #39a8e0;
+  --color-primary3: #e6007e;
+  --color-primary4: #dedc00;
+  --color-secondary1: #d38e49;
+  --color-secondary2: #c47b38;
+  --color-secondary3: #9f4316;
+  --color-tagBG: #CFF7D3;
+  --color-tag: #02542D;
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+button {
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p,
+label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin-top: 100px;
+}
+
+.header__menu {
+}
+
+.header__menuItem {
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.header__menuLink {
+  text-align: center;
+  list-style: none;
+  background-color: var(--color-white);
+  width: 90px;
+
+  margin: 20px;
+}
+
+.header__menuButton {
+  width: 132.72px;
+  height: 34.44px;
+  border: none;
+  border-radius: 27px;
+  background-color: #e6007e;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.banner {
+  height: 508px;
+  background-color: var(--color-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+
+.banner__direita {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner__direitaMoney {
+  margin-top: 60px;
+  width: 107.76px;
+}
+
+main {
+  background-color: var(--color-primary4);
+  padding: 30px;
+}
+
+main {
+  h2 {
+    text-align: center;
+    margin: 30px;
+  }
+}
+
+.products__featured {
+  padding: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.products__card {
+  width: 313px;
+
+  padding: 10px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid var(--color-white);
+
+  margin-bottom: 120px;
+}
+
+.card__img {
+  width: 287px;
+  border-radius: 10px 10px 0 0;
+}
+
+.gray{
+  filter: grayscale(100%);
+  cursor: auto;
 }
 
 
-
-h1, h2, h3, h4, a, button{
-    font-family: "Orbitron", sans-serif;
-    text-transform: uppercase;
+.arrow_previous,
+.arrow_next{
+  cursor: pointer;
 }
 
-p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.card__title {
+  padding: 5px 10px;
+  text-align: left;
 }
 
+.card__text {
+  padding: 10px 10px;
+}
+
+.banner_FAQ {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--color-white);
+  margin: 0 auto;
+  max-width: 1416px;
+
+  margin-top: -30px;
+  border-radius: 10px;
+
+  padding: 40px;
+}
+
+.banner_FAQleft {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner_FAQleft h4 {
+  margin-bottom: 20px;
+}
+
+.banner_FAQleft button {
+  width: 132.72px;
+  height: 34.44px;
+  border: none;
+  border-radius: 27px;
+  margin-top: 20px;
+
+  background-color: #e6007e;
+  color: var(--color-white);
+
+  cursor: pointer;
+}
+
+.banner_FAQright {
+  margin-top: -90px;
+}
+
+.grid {
+  width: 100%;
+  max-width: 1416px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+
+  margin: 50px 0;
+}
+
+.gallery_left {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-right: 30px;
+  
+}
+
+.gallery_left p {
+  margin-top: 30px;
+}
+
+.gallery_right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+
+.gallery_right img {
+  width: 198px;
+  height: 136px;
+  margin: 5px;
+  object-fit: cover;
+}
+
+.destaque {
+  background-color: var(--color-white);
+  margin-top: 160px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+.tag{
+    width: 120px;
+    height: 30px;
+    border-radius: 16px;
+    text-align: center;
+    align-items: center;
+    background-color: var(--color-tagBG);
+    color: var(--color-tag);
+
+}
+
+.destaque__img {
+  display: flex;
+  align-items: center;
+}
+
+.img__produto {
+  width: 604px;
+  border-radius: 8px;
+}
+.img__like {
+  position: relative;
+  top: -550px; left: 50px;
+}
+
+.img__like:hover{
+  transform: scale(1.30);
+}
+
+.destaque__content {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.fields {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+
+
+}
+
+.fields__item {
+  display: flex;
+  flex-direction: column;
+
+  
+  
+}
+
+label,
+select{
+ 
+}
+
+#tamanhos,
+#camisetas {
+  width: 340px;
+  height: 50px;
+  margin: 20px 0;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.destaque button {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.carrossel {
+  background-color: var(--color-primary4);
+  padding: 30px;
+}
+
+.carrossel {
+  h2 {
+    text-align: center;
+    margin: 30px;
+  }
+}
+
+.price {
+  text-align: left;
+  margin: 0;
+  font-size: 48px;
+}
+
+footer,
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  justify-content: space-between;
+  height: 264px;
+  background-color: var(--color-black);
+
+  h3 {
+    color: var(--color-white);
+  }
+}
+
+.social_media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}

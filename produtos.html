@@ -1,104 +1,160 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
     <title>produtost</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header grid">
-        <a href="./index.html"><img class="header__logo" src="./img/PMBrand.svg" alt="" srcset=""></a>
+        <a href="./index.html"
+          ><img class="header__logo" src="./img/PMBrand.svg" alt="" srcset=""
+        /></a>
         <nav class="">
-            <ul class="header__menu">
-                <li class="header__menuItem"><a class="header__menuLink">item 1</a></li>
-                <li class="header__menuItem"><a class="header__menuLink">item 2</a></li>
-                <li class="header__menuItem"><a class="header__menuLink">item 3</a></li>
-                <li class="header__menuItem"><a class="header__menuLink">item 4</a></li>
-            </ul>
-
+          <ul class="header__menu">
+            <li class="header__menuItem">
+              <a class="header__menuLink" href="#">home</a>
+            </li>
+            <li class="header__menuItem">
+              <a class="header__menuLink" href="#produto">produtos</a>
+            </li>
+            <li class="header__menuItem">
+              <a class="header__menuLink" href="#galeria">galeria</a>
+            </li>
+            <li class="header__menuItem">
+              <a class="header__menuLink" href="#">FAQ</a>
+            </li>
+          </ul>
         </nav>
-        <button class="header__menuButton">menu</button>
-    </header>
+        <button
+          class="header__menuButton"
+          onclick="window.location.href='./faq.html'"
+        >
+          login
+        </button>
+      </header>
 
+    <section class="destaque grid">
+      <div class="destaque_img">
+        <img class="img__like" src="./img/Icon Button_like.png" alt="" />
+        <img
+          class="img__produto"
+          src="./img/Image1_G.png"
+          alt="produto em destaque"
+        />
+      </div>
+      <div class="destaque__content">
+        <h2>Text Heading</h2>
+        <p class="tag">título da tag</p>
+        <h2 class="price">R$ 50</h2>
 
-    <main>
         <div>
-            <img src="./img/Icon Button_like.png" alt="">
-            <img src="./img/Image1_G.png" alt="produto em destaque">
-        </div>
-        <div>
-            <h3>Text Heading</h3>
-            <p class="tag">título da tag</p>
-            <h2 class="price">R$ 50</h2>
-
-            <div>
-                <div>
-                    <label for="camisetas">Escolha uma camiseta:</label>
-                    <select id="camisetas" name="camisetas">
-                        <option value="preta">Preta</option>
-                        <option value="branca">Branca</option>
-                        <option value="cinza">Cinza</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label for="tamanhos"> Escolha o tamanho</label>
-                    <select id="tamanhos" name="tamanhos">
-                        <option value="pequena">Pequeno</option>
-                        <option value="media">Médio</option>
-                        <option value="grande">Grande</option>
-                    </select>
-                </div>
-
-                <button>comprar</button>
+          <div class="fields">
+            <div class="fields__item">
+              <label for="camisetas">Escolha uma camiseta:</label>
+              <select id="camisetas" name="camisetas">
+                <option value="preta">Preta</option>
+                <option value="branca">Branca</option>
+                <option value="cinza">Cinza</option>
+              </select>
             </div>
 
-            <p class="description">Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.</p>
-        </div>
-    </main>
-
-
-    <section>
-        <h2>Título da sessão</h2>
-        <div class="featured_products">
-            <div class="arrow_next">
-                <img src="./img/arrow_next.svg" alt="">
+            <div class="fields__item">
+              <label for="tamanhos"> Escolha o tamanho</label>
+              <select id="tamanhos" name="tamanhos">
+                <option value="pequena">Pequeno</option>
+                <option value="media">Médio</option>
+                <option value="grande">Grande</option>
+              </select>
             </div>
-            <div class="arrow_previous">
-                <img src="./img/arrow_previous.svg" alt="">
-            </div>
-            <article class="card">
-                <a href="./produtos.html"><img src="./img/Image1.png" alt="kit de 3 camisetas da Puta Merda"></a>
-                <h3>kit Puta Merda</h3>
-                <p>Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story. </p>
-            </article>
-            <article class="card">
-                <a href="#"><img src="./img/Image2.png" alt="camiseta amarela da Puta Merda"></a>
-                <h3>Camiseta amarela</h3>
-                <p>Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story. </p>
-            </article>
-            <article class="card">
-                <a href="#"><img src="./img/Image3.png" alt="Blusa moletom canguru preta da Puta Merda"></a>
-                <h3>Blusa moletom preto</h3>
-                <p>Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story. </p>
-            </article>
+          </div>
+
+          <button>comprar</button>
         </div>
+
+        <p class="description">
+          Body text for whatever you'd like to say. Add main takeaway points,
+          quotes, anecdotes, or even a very very short story.
+        </p>
+      </div>
     </section>
 
+    <section class="carrossel">
+      <h2>produtos</h2>
 
+      <div class="products__featured grid">
+        <div class="arrow_previous">
+          <img src="./img/arrow_previous.svg" alt="" />
+        </div>
+
+        <div class="products grid" >
+          <article class="products__card">
+            <a class="card__link" href="./produtos.html"
+              ><img
+                class="card__img gray"
+                src="./img/Image1.png"
+                alt="kit de 3 camisetas da Puta Merda"
+            /></a>
+            <h3 class="card__title">kit Puta Merda</h3>
+            <p class="card__text">
+              Body text for whatever you'd like to say. Add main takeaway
+              points, quotes, anecdotes, or even a very very short story.
+            </p>
+          </article>
+          <article class="products__card">
+            <a class="card__link" href="./produtos.html"
+              ><img
+                class="card__img"
+                src="./img/Image2.png"
+                alt="kit de 3 camisetas da Puta Merda"
+            /></a>
+            <h3 class="card__title">kit Puta Merda</h3>
+            <p class="card__text">
+              Body text for whatever you'd like to say. Add main takeaway
+              points, quotes, anecdotes, or even a very very short story.
+            </p>
+          </article>
+          <article class="products__card">
+            <a class="card__link" href="./produtos.html"
+              ><img
+                class="card__img"
+                src="./img/Image3.png"
+                alt="kit de 3 camisetas da Puta Merda"
+            /></a>
+            <h3 class="card__title">kit Puta Merda</h3>
+            <p class="card__text">
+              Body text for whatever you'd like to say. Add main takeaway
+              points, quotes, anecdotes, or even a very very short story.
+            </p>
+          </article>
+        </div>
+
+        <div class="arrow_next">
+          <img src="./img/arrow_next.svg" alt="" />
+        </div>
+      </div>
+    </section>
 
     <footer>
+      <div class="footer grid">
         <div class="logo_footer">
-            <img src="./img/PMBrand_2.png" alt="">
+          <a href="./index.html"><img src="./img/PMBrand_2.png" alt="" /></a>
         </div>
         <div class="menu"></div>
-        <div class="social_media"></div>
+        <div class="social_media">
+          <h3>@putamerdastore</h3>
+          <img src="./img/face_icon.png" alt="" srcset="" />
+          <img src="./img/inst_icon.png" alt="" srcset="" />
+        </div>
+      </div>
     </footer>
-    
-</body>
+  </body>
 </html>
