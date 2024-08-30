@@ -36,7 +36,7 @@ button {
 }
 
 a:hover{
-  text-decoration: line-through var(--color-primary3);
+  text-decoration: line-through var(--color-primary3) 6px solid;
 }
 
 
@@ -155,6 +155,17 @@ main {
 
   margin-bottom: 120px;
 }
+
+
+
+.products__card:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+
+
+
 
 .card__img {
   width: 287px;
@@ -276,10 +287,13 @@ main {
 
 .tag{
     width: 120px;
-    height: 30px;
+    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 16px;
     text-align: center;
-    align-items: center;
     background-color: var(--color-tagBG);
     color: var(--color-tag);
 
@@ -301,6 +315,7 @@ main {
 
 .img__like:hover{
   transform: scale(1.30);
+  transition: 0.3s;
 }
 
 .destaque__content {
@@ -344,11 +359,13 @@ select{
 
 .destaque button {
   width: 100%;
-  height: 40px;
+  height: 50px;
   border-radius: 8px;
   border: none;
   background-color: var(--color-black);
   color: var(--color-white);
+
+  cursor: pointer;
 }
 
 .carrossel {
@@ -390,3 +407,45 @@ footer,
   align-items: center;
   gap: 20px;
 }
+
+
+.login{
+  background-color: var(--color-primary1);
+
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1416px;
+  width: 100%;
+  margin: 0; /* Remove a margem para garantir o alinhamento central */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+form{
+  background-color: var(--color-white);
+  width: 400px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px;
+  border: none;
+  border-radius: 8px;
+
+  input{
+    background-color: rgb(222, 222, 222);
+    border: none;
+    border-radius: 8px;
+
+
+
+    height: 60px;
+  }
+}
+
