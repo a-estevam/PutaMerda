@@ -18,8 +18,8 @@
   --color-secondary1: #d38e49;
   --color-secondary2: #c47b38;
   --color-secondary3: #9f4316;
-  --color-tagBG: #CFF7D3;
-  --color-tag: #02542D;
+  --color-tagBG: #cff7d3;
+  --color-tag: #02542d;
 }
 
 h1,
@@ -35,10 +35,9 @@ button {
   text-decoration: none;
 }
 
-a:hover{
+a:hover {
   text-decoration: line-through var(--color-primary3) 6px solid;
 }
-
 
 h2 {
   font-size: 30px;
@@ -156,30 +155,23 @@ main {
   margin-bottom: 120px;
 }
 
-
-
-.products__card:hover{
+.products__card:hover {
   transform: scale(1.05);
   transition: 0.3s;
 }
-
-
-
-
 
 .card__img {
   width: 287px;
   border-radius: 10px 10px 0 0;
 }
 
-.gray{
+.gray {
   filter: grayscale(100%);
   cursor: auto;
 }
 
-
 .arrow_previous,
-.arrow_next{
+.arrow_next {
   cursor: pointer;
 }
 
@@ -253,7 +245,6 @@ main {
   flex-direction: column;
   width: 40%;
   padding-right: 30px;
-  
 }
 
 .gallery_left p {
@@ -285,18 +276,17 @@ main {
   gap: 30px;
 }
 
-.tag{
-    width: 120px;
-    height: 35px;
+.tag {
+  width: 120px;
+  height: 35px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 16px;
-    text-align: center;
-    background-color: var(--color-tagBG);
-    color: var(--color-tag);
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  text-align: center;
+  background-color: var(--color-tagBG);
+  color: var(--color-tag);
 }
 
 .destaque__img {
@@ -310,16 +300,16 @@ main {
 }
 .img__like {
   position: relative;
-  top: -550px; left: 50px;
+  top: -550px;
+  left: 50px;
 }
 
-.img__like:hover{
-  transform: scale(1.30);
+.img__like:hover {
+  transform: scale(1.3);
   transition: 0.3s;
 }
 
 .destaque__content {
-  
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -330,22 +320,15 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
-
-
 }
 
 .fields__item {
   display: flex;
   flex-direction: column;
-
-  
-  
 }
 
 label,
-select{
- 
+select {
 }
 
 #tamanhos,
@@ -408,10 +391,8 @@ footer,
   gap: 20px;
 }
 
-
-.login{
+.login {
   background-color: var(--color-primary1);
-
 }
 
 .content {
@@ -421,13 +402,13 @@ footer,
   transform: translate(-50%, -50%);
   max-width: 1416px;
   width: 100%;
-  margin: 0; /* Remove a margem para garantir o alinhamento central */
+  margin: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-form{
+form {
   background-color: var(--color-white);
   width: 400px;
   height: 600px;
@@ -438,14 +419,138 @@ form{
   border: none;
   border-radius: 8px;
 
-  input{
+  input {
     background-color: rgb(222, 222, 222);
     border: none;
     border-radius: 8px;
-
-
 
     height: 60px;
   }
 }
 
+.texto2{
+  display: none;
+}
+
+
+@media (max-width: 600px) {
+  footer,
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .social_media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .grid {
+    width: 100%;
+    max-width: 580px;
+  }
+
+  nav,
+  .header__menuButton,
+  .banner__direita {
+    display: none;
+  }
+
+ 
+
+  .products__featured {
+    overflow: scroll;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+   
+  }
+
+  .texto1{
+    display:none;
+  }
+
+  .texto2{
+    display: block;
+    width: 181px;
+    align-items: center;
+    margin: 30px auto;
+  }
+
+  .banner_FAQright{
+    display: none;
+  }
+
+  .banner_FAQ {
+
+    max-width: 420px;
+
+  }
+
+
+  
+  .banner_FAQleft {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .banner_FAQleft h4 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .banner_FAQleft button {
+    margin: 30px auto;
+  
+  }
+  
+  .banner_FAQright {
+    margin-top: -120px;
+  }
+  
+  .products__card{
+    margin: 5px 10px 40px 10px;
+  }
+
+  .arrow_next,
+  .arrow_previous{
+    display: none;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .gallery_left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 30px;
+  }
+  
+  .gallery_left p {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .gallery_left h2{
+    text-align: center;
+  }
+
+  
+  .gallery_right {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .gallery_right img {
+
+  }
+
+
+
+}
