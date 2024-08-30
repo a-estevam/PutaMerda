@@ -32,7 +32,13 @@ button {
   text-transform: uppercase;
 
   letter-spacing: 1px;
+  text-decoration: none;
 }
+
+a:hover{
+  text-decoration: line-through var(--color-primary3);
+}
+
 
 h2 {
   font-size: 30px;
@@ -93,7 +99,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5%;
+  gap: 8%;
 }
 
 .banner__direita {
