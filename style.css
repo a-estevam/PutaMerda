@@ -223,7 +223,7 @@ main {
 
 .gallery {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 300px;
   margin: 50px 0;
 }
@@ -231,12 +231,13 @@ main {
 .gallery_left {
   display: flex;
   flex-direction: column;
-  width: 40%;
-  padding-right: 30px;
+  width: 50%;
+  padding-left: 135px;
+  
 }
 
 .gallery_left p {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .gallery_right {
@@ -244,7 +245,7 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 60%;
+  width: 50%;
 }
 
 .gallery_right img {
@@ -634,7 +635,8 @@ form label:not(:first-child) {
 
   .gallery_left {
     width: 100%;
-    padding-right: 0;
+    padding-right: 20;
+    
   }
 
   .gallery_right {
