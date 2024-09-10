@@ -9,7 +9,9 @@
 }
 
 :root {
+  --color-black01: #000000;
   --color-black: #1d1d1b;
+  --color-gray:#eeeeee;
   --color-white: #ffffff;
   --color-primary1: #662483;
   --color-primary2: #39a8e0;
@@ -22,7 +24,13 @@
   --color-tag: #02542d;
 }
 
-h1, h2, h3, h4, a, button, summary {
+h1,
+h2,
+h3,
+h4,
+a,
+button,
+summary {
   font-family: "Orbitron", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -35,7 +43,8 @@ h2 {
   margin: 30px;
 }
 
-p, label {
+p,
+label {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -72,7 +81,8 @@ a:hover {
   margin: 20px;
 }
 
-.header__menuButton {
+.header__menuButton,
+button {
   width: 132.72px;
   height: 34.44px;
   border: none;
@@ -84,11 +94,20 @@ a:hover {
 
 .banner {
   height: 508px;
-  background-color: var(--color-black);
+  background-color: var(--color-black01);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8%;
+}
+
+.banner video {
+  height: 508px;
+  z-index: 0;
+  margin-left: -150px;
+}
+
+.banner__esquerda {
+  z-index: 1;
 }
 
 .banner__direita {
@@ -346,8 +365,64 @@ footer h3 {
   gap: 20px;
 }
 
+/* página login */
+
 .login {
-  background-color: var(--color-primary1);
+  background-color: var(--color-primary3);
+}
+
+.login__content {
+  width: 80vw;
+  height: 80vh;
+
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__content img {
+  width: 200px;
+  margin-right: -110px;
+  z-index: 1;
+}
+
+.login__itens {
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 8px;
+
+  width: 500px;
+  height: 350px;
+
+  padding: 3% 3% 3% 13%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  background-color: rgb(222, 222, 222);
+  border: none;
+  border-radius: 8px;
+  height: 60px;
+  padding: 10px;
+  margin-top: 12px;
+}
+form label:not(:first-child) {
+  margin-top: 20px;
+}
+
+.login__action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .content {
@@ -363,42 +438,43 @@ footer h3 {
   justify-content: space-between;
 }
 
-form {
-  background-color: var(--color-white);
-  width: 400px;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-  border: none;
-  border-radius: 8px;
-}
-
-form input {
-  background-color: rgb(222, 222, 222);
-  border: none;
-  border-radius: 8px;
-  height: 60px;
-}
-
 .texto2 {
   display: none;
 }
 
 .faq {
-  width: 1380px;
-  border: 1px solid var(--color-black);
-  margin: 0 auto;
-}
-
-.faq .content {
   display: flex;
-  flex-direction: column;
-  justify-content: end;
+  align-items: center;
+  justify-content: space-around;
+  width: 1380px;
+  height: 200px;
+  border: 1px solid var(--color-black);
+  margin: 120px auto;
+  border-radius: 30px;
 }
 
-.faq .content img {
+.faq_img{
+  width: 300px;
+}
+.faq_text {
   width: 520px;
+}
+
+
+.painel{
+  width: 1380px;
+  height: 100px;
+
+  margin-bottom: 10px;
+  padding: 10px;
+
+  
+  background-color: var(--color-gray);
+  border-radius: 10px;
+
+  p{
+    margin-top: 20px;
+  }
 }
 
 .duvidas {
@@ -443,4 +519,201 @@ form input {
 
 .list__faq {
   margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .header__logo {
+  }
+
+  .header__menu,
+  .header__menuButton {
+    display: none;
+  }
+
+  .header__menuItem {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header__menuLink {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .banner {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .banner__direita,
+  .banner video {
+    display: none;
+  }
+
+  .banner__direitaMoney {
+    margin-top: 20px;
+    width: 80px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .products__featured,
+  .products {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .products__card {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .arrow_previous,
+  .arrow_next {
+    display: none;
+  }
+  .card__link {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card__img {
+    width: 340px;
+  }
+
+  .banner_FAQ {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .banner_FAQ h4 {
+    text-align: center;
+    font-size: 20px;
+    margin: 30px auto;
+  }
+
+  .banner_FAQright {
+    display: none;
+    margin-top: 20px;
+  }
+
+  .banner_FAQ button {
+    margin: 20px auto;
+  }
+
+  .texto1 {
+    display: none;
+    width: 100px;
+  }
+
+  .texto2 {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .gallery {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .gallery p {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .gallery_left {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .gallery_right {
+    margin-top: 30px;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .logo_footer {
+    margin: 20px;
+  }
+
+  .destaque {
+    flex-direction: column;
+    margin-top: 80px;
+    gap: 20px;
+  }
+
+  .img__produto {
+    width: 100%;
+  }
+
+  .img__like {
+    top: -400px;
+    left: 20px;
+  }
+
+  .fields {
+    flex-direction: column;
+  }
+
+  #tamanhos,
+  #camisetas {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .login__content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .login__itens {
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .login__content img {
+    margin: 0 auto;
+    margin-bottom: -50px;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .social_media {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .faq {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .duvidas {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .accordion {
+    padding: 20px;
+  }
+
+  .accordion__content {
+    padding: 10px;
+  }
 }
