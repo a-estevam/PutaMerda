@@ -233,8 +233,6 @@ main {
   display: flex;
   flex-direction: column;
   width: 50%;
-  padding-left: 135px;
-  
 }
 
 .gallery_left p {
