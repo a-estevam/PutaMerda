@@ -529,9 +529,6 @@ form label:not(:first-child) {
     padding: 20px;
   }
 
-  .header__logo {
-  }
-
   .header__menu,
   .header__menuButton {
     display: none;
