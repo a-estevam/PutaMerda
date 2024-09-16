@@ -145,7 +145,8 @@ main {
   display: flex;
   flex-direction: column;
   border: 1px solid var(--color-white);
-  margin-bottom: 120px;
+  margin-top: 50px;
+  margin-bottom: 90px;
   transition: transform 0.3s;
 }
 
@@ -463,12 +464,12 @@ form label:not(:first-child) {
 
 
 .painel{
-  width: 1380px;
+  width: 80%;
   height: 100px;
 
-  margin-bottom: 10px;
+  margin: 10px auto;
   padding: 10px;
-
+  
   
   background-color: var(--color-gray);
   border-radius: 10px;
@@ -481,6 +482,7 @@ form label:not(:first-child) {
 .duvidas {
   width: 1380px;
   margin: 96px auto;
+  
 }
 
 .duvidas h2 {
@@ -488,7 +490,7 @@ form label:not(:first-child) {
   margin-bottom: 20px;
 }
 
-.accordion {
+/* .accordion {
   background-color: #ccc;
   border-radius: 10px;
   padding: 30px;
@@ -516,7 +518,7 @@ form label:not(:first-child) {
   background-color: #999;
   border-radius: 10px;
   padding: 20px;
-}
+} */
 
 .list__faq {
   margin-bottom: 50px;
