@@ -43,6 +43,8 @@ h2 {
   margin: 30px;
 }
 
+
+
 p,
 label {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -475,6 +477,10 @@ form label:not(:first-child) {
   p{
     margin-top: 20px;
   }
+}
+
+.painel h3{
+  color: var(--color-primary3);
 }
 
 .duvidas {
