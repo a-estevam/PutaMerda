@@ -494,35 +494,6 @@ form label:not(:first-child) {
   margin-bottom: 20px;
 }
 
-/* .accordion {
-  background-color: #ccc;
-  border-radius: 10px;
-  padding: 30px;
-}
-
-.accordion div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.accordion summary {
-  text-align: left;
-  color: var(--color-primary1);
-  margin-bottom: 20px;
-}
-
-.accordion p {
-  text-align: left;
-  color: var(--color-primary3);
-  padding: 10px;
-}
-
-.accordion__content {
-  background-color: #999;
-  border-radius: 10px;
-  padding: 20px;
-} */
 
 .list__faq {
   margin-bottom: 50px;
