@@ -563,7 +563,7 @@ form label:not(:first-child) {
   }
 
   .card__img {
-    width: 340px;
+    width: 100%;
   }
 
   .banner_FAQ {
@@ -691,5 +691,9 @@ form label:not(:first-child) {
 
   .accordion__content {
     padding: 10px;
+  }
+
+  .header__logo {
+    margin-top: 10px;
   }
 }
